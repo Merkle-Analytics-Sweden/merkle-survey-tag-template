@@ -1,5 +1,5 @@
 homepage: "https://www.merkle.se/"
 documentation: "https://www.merkle.se/analys/merkle-survey"
 versions:
-  - sha: bc9af74604eecd46a35a6be4186f0cfa9c15d8df
+  - sha: 9aca065662953b7ae1a372b783e76c3407687bf1
     changeNotes: Initial release.
