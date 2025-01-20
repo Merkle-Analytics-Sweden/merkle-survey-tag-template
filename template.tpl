@@ -100,12 +100,12 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const injectScript = require('injectScript');
 const setWindow = require('setInWindow');
-const encodeUri = require('encodeUri');
+const encodeUriComponent = require('encodeUriComponent');
 
 let env = data.environment; 
 let surveyId = data.surveyId;
 let dataLayer = data.dataLayer;
-let url = encodeUri('https://cdn.merklesurvey.com/' + env + "/surveys/SID." + surveyId + ".js?dl=" + dataLayer);
+let url = 'https://cdn.merklesurvey.com/' + encodeUriComponent(env) + '/surveys/SID.' + encodeUriComponent(surveyId) + '.js?dl=' + encodeUriComponent(dataLayer);
 
 setWindow(dataLayer, [], true);
 
@@ -129,7 +129,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://cdn.merklesurvey.com/*/surveys/SID.*.js?dl*"
+                "string": "https://cdn.merklesurvey.com/*/surveys/SID.*.js?dl=*"
               }
             ]
           }
