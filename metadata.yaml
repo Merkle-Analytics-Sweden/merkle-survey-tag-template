@@ -2,8 +2,13 @@ homepage: "https://www.merkle.se/"
 documentation: "https://www.merkle.se/analys/merkle-survey"
 versions:
   # Latest version
+  - sha: ee8533483b176d3c172766940cfcfca702a230f5
+    changeNotes: Updated template to use encodeUriComponent function before injecting script.
+  # Version 2
   - sha: 5f5cb8e03e3dc4db8e865c74ed7c089191da473f
     changeNotes: Updated template to use encodeUri function before injecting script.
   # First version
   - sha: 9aca065662953b7ae1a372b783e76c3407687bf1
     changeNotes: Initial release.
+
+    
