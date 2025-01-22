@@ -2,6 +2,9 @@ homepage: "https://www.merkle.se/"
 documentation: "https://www.merkle.se/analys/merkle-survey"
 versions:
   # Latest version
+  - sha: ba0f6bdea8027ca18424452bb974d2711f8649c7
+    changeNotes: Updated data.gtmOnSuccess & data.gtmOnFailure.
+  # Version 3
   - sha: ee8533483b176d3c172766940cfcfca702a230f5
     changeNotes: Updated template to use encodeUriComponent function before injecting script.
   # Version 2
