@@ -109,7 +109,7 @@ let url = 'https://cdn.merklesurvey.com/' + encodeUriComponent(env) + '/surveys/
 
 setWindow(dataLayer, [], true);
 
-injectScript(url, data.gtmOnSuccess(), data.gtmOnFailure());
+injectScript(url, data.gtmOnSuccess, data.gtmOnFailure);
 
 
 ___WEB_PERMISSIONS___
